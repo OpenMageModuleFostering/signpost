@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <signpost translate="title" module="signpost">
+                                        <title>Signpost Section</title>
+                                    </signpost>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+
+               </children>
+           </admin>
+       </resources>
+    </acl>
+</config>

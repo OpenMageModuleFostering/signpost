@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<config>
+    <modules>
+        <MySolutions_Signpost>
+            <version>1.0.0</version>
+        </MySolutions_Signpost>
+    </modules>
+    <global>
+        <helpers>
+            <signpost>
+                <class>MySolutions_Signpost_Helper</class>
+            </signpost>
+        </helpers>
+        <models>
+            <signpost>
+                <class>MySolutions_Signpost_Model</class>
+            </signpost>
+        </models>
+        <!--
+           * Push Customer Data to signpost
+            * whenever Customer will  created    
+        -->
+        <events>
+            <customer_save_before>
+                <observers>
+                    <push_data_to_signpost_when_customer_register>
+                        <class>signpost/observer</class>
+                        <method>PushCustomerData</method> 
+                        <type>singleton</type>   
+                    </push_data_to_signpost_when_customer_register> 
+                </observers>
+            </customer_save_before>
+        
+        <!--
+           * Push guest Customer Data to signpost
+            * whenever order will  placed    
+        --> 
+            <checkout_submit_all_after>
+                <observers>
+                    <push_data_to_signpost_when_order_place>
+                        <class>signpost/observer</class>
+                        <method>PushGuestCustomerData</method> 
+                        <type>singleton</type>   
+                    </push_data_to_signpost_when_order_place> 
+                </observers>
+            </checkout_submit_all_after>               
+        </events>
+    </global>
+</config>    

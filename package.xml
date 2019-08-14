@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>signpost</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Sync your Magento clients to your Signpost account in real time!</summary>
+    <description>Use our Signpost extension for Magento to sync your Magento clients in real time to your Signpost account. Setup takes 2 minutes, and all syncing is in the background. When a customer signs up in Magento, they will be immediately imported into Signpost for you to being marketing to.</description>
+    <notes>Use our Signpost extension for Magento to sync your Magento clients in real time to your Signpost account. Setup takes 2 minutes, and all syncing is in the background. When a customer signs up in Magento, they will be immediately imported into Signpost for you to being marketing to.</notes>
+    <authors><author><name>bill</name><user>bill</user><email>bill@fowsolutions.com</email></author></authors>
+    <date>2016-08-05</date>
+    <time>11:15:43</time>
+    <contents><target name="magecommunity"><dir name="MySolutions"><dir name="Signpost"><dir name="Helper"><file name="Api.php" hash="0363e4f5fbf376dbb88523877511d7b6"/><file name="Data.php" hash="663b68f8791edb68b858d8a98c06aa08"/></dir><dir name="Model"><file name="Observer.php" hash="be44956c2149d682782a86bfe9e710dd"/></dir><dir name="etc"><file name="adminhtml.xml" hash="538c8907978a7324957f6cfae1a9d5fd"/><file name="config.xml" hash="847b9ae6bd1df5d4878ba8f7213caaa4"/><file name="system.xml" hash="7444aaf16a152a4056ac1ff4e6d5ef83"/></dir></dir></dir></target><target name="mage"><dir name="app"><dir name="etc"><dir name="modules"><file name="MySolutions_Signpost.xml" hash="ee4d069d3d1220bda8e6c14d2b8abc35"/></dir></dir></dir><dir name="."><file name="Documentation.pdf" hash="ad955b2e71995768c4c3a0c91d6923c7"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>4.0.1</min><max>5.0.0</max></php></required></dependencies>
+</package>
