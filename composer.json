@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/signpost",
+    "name": "openmage-module-fostering\/signpost",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Sync your Magento clients to your Signpost account in real time!",
     "authors": [
