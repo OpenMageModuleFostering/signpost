@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/signpost",
+    "name": "OpenMageModuleFostering\/signpost",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Sync your Magento clients to your Signpost account in real time!",
     "authors": [
-    {
-        "name": "bill",
-        "email": "bill@fowsolutions.com"
-    }
-],
+        {
+            "name": "bill",
+            "email": "bill@fowsolutions.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
